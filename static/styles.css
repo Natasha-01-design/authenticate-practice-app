@@ -1,0 +1,107 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Segoe UI", Roboto, sans-serif;
+  background: #f4f6f8;
+  color: #333;
+  line-height: 1.6;
+}
+
+header {
+  background: #4a90e2;
+  color: #fff;
+  padding: 1rem;
+  text-align: center;
+  font-size: 1.5rem;
+  font-weight: bold;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+#auth-form {
+  background: #fff;
+  width: 350px;
+  margin: 3rem auto;
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+#auth-form h1 {
+  text-align: center;
+  margin-bottom: 1rem;
+  color: #2c3e50;
+}
+#auth-form .input-field {
+  padding: 0.75rem 1rem;
+  border: 1px solid rgb(104.6774193548, 138.5, 172.3225806452);
+  border-radius: 8px;
+  outline: none;
+  font-size: 1rem;
+}
+#auth-form .input-field:focus {
+  border-color: #4a90e2;
+  box-shadow: 0 0 5px rgba(74, 144, 226, 0.4);
+}
+#auth-form .btn {
+  padding: 0.75rem;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+#auth-form .btn-login {
+  background: #4a90e2;
+  color: #fff;
+  font-weight: bold;
+}
+#auth-form .btn-login:hover {
+  background: rgb(34.3857142857, 117.3857142857, 214.6142857143);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+div {
+  text-align: center;
+}
+
+.dashboard {
+  max-width: 600px;
+  margin: 3rem auto;
+  padding: 2rem;
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+.dashboard h1 {
+  color: #2c3e50;
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+}
+.dashboard p {
+  font-size: 1.2rem;
+  color: #555;
+  margin-bottom: 2rem;
+}
+.dashboard a {
+  display: inline-block;
+  padding: 0.75rem 1.5rem;
+  background: #e74c3c;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 6px;
+  font-weight: bold;
+  transition: all 0.3s ease;
+}
+.dashboard a:hover {
+  background: rgb(213.698630137, 43.8356164384, 26.301369863);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}/*# sourceMappingURL=styles.css.map */

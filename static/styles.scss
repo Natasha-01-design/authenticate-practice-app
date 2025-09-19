@@ -1,0 +1,131 @@
+
+$primary: #4a90e2;
+$secondary: #2c3e50;
+$background: #f4f6f8;
+$text: #333;
+$light: #fff;
+$radius: 8px;
+$shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Segoe UI", Roboto, sans-serif;
+  background: $background;
+  color: $text;
+  line-height: 1.6;
+}
+
+// ==========================
+// Header
+// ==========================
+header {
+  background: $primary;
+  color: $light;
+  padding: 1rem;
+  text-align: center;
+  font-size: 1.5rem;
+  font-weight: bold;
+  box-shadow: $shadow;
+}
+
+#auth-form {
+  background: $light;
+  width: 350px;
+  margin: 3rem auto;
+  padding: 2rem;
+  border-radius: $radius;
+  box-shadow: $shadow;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+
+  h1 {
+    text-align: center;
+    margin-bottom: 1rem;
+    color: $secondary;
+  }
+
+  .input-field {
+    padding: 0.75rem 1rem;
+    border: 1px solid lighten($secondary, 30%);
+    border-radius: $radius;
+    outline: none;
+    font-size: 1rem;
+
+    &:focus {
+      border-color: $primary;
+      box-shadow: 0 0 5px rgba($primary, 0.4);
+    }
+  }
+
+  .btn {
+    padding: 0.75rem;
+    border: none;
+    border-radius: $radius;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+
+  .btn-login {
+    background: $primary;
+    color: $light;
+    font-weight: bold;
+
+    &:hover {
+      background: darken($primary, 10%);
+      transform: translateY(-2px);
+      box-shadow: $shadow;
+    }
+  }
+}
+
+
+div {
+  text-align: center;
+}
+
+.dashboard {
+  max-width: 600px;
+  margin: 3rem auto;
+  padding: 2rem;
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+  text-align: center;
+
+  h1 {
+    color: #2c3e50;
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+  }
+
+  p {
+    font-size: 1.2rem;
+    color: #555;
+    margin-bottom: 2rem;
+  }
+
+  a {
+    display: inline-block;
+    padding: 0.75rem 1.5rem;
+    background: #e74c3c;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 6px;
+    font-weight: bold;
+    transition: all 0.3s ease;
+
+    &:hover {
+      background: darken(#e74c3c, 10%);
+      transform: translateY(-2px);
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+    }
+  }
+}
